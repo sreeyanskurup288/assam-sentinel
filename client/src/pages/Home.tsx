@@ -114,7 +114,7 @@ function Sidebar({ active, setActive, collapsed, setCollapsed }: { active: strin
 function Header({ language, setLanguage, onMenu }: { language: Language; setLanguage: (value: Language) => void; onMenu: () => void }) {
   return (
     <header className="topbar">
-      <div className="flex min-w-0 items-center gap-3"><button onClick={onMenu} className="icon-button mobile-only" aria-label="Open menu"><Menu size={20} /></button><div><div className="eyebrow">Assam · District health operations</div><h1 className="page-title">Good morning, Ananya <span className="wave">✳</span></h1></div></div>
+      <div className="flex min-w-0 items-center gap-3"><button onClick={onMenu} className="icon-button mobile-only" aria-label="Open menu"><Menu size={20} /></button><div><div className="eyebrow">Assam · District health operations</div><h1 className="page-title">Good morning, Sreeyans <span className="wave">✳</span></h1></div></div>
       <div className="flex items-center gap-2 sm:gap-3"><div className="sync-status"><span className="status-dot" /> <span className="hidden sm:inline">Data synced</span><span className="sm:hidden">Synced</span><span className="text-slate-400">·</span><span>2 min ago</span></div><div className="language-switcher"><Languages size={15} /><select value={language} onChange={(e) => setLanguage(e.target.value as Language)} aria-label="Choose language"><option>EN</option><option>অসমীয়া</option><option>हिंदी</option></select><ChevronDown size={13} /></div><button className="icon-button notification-button" aria-label="Notifications"><Bell size={18} /><span className="notification-badge">3</span></button><div className="avatar">AS</div></div>
     </header>
   );
